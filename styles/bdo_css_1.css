@@ -1,0 +1,250 @@
+@font-face{
+    font-family: "Crimson Text";
+    src: url(../crimson_text_roman.ttf) format("truetype");
+}
+
+
+body {
+    margin:0 !important;
+    padding:0 !important;
+    font-family : Georgia,"Times New Roman",Times,serif;
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+   
+}
+
+header {
+    width: 100%;
+    height: 122px;
+    background-image: url('../images/header.jpg');
+}
+
+footer {
+    width: 100%;
+    height: 33px;
+    background-image : url('../images/footer.jpg');
+}
+
+header div {
+    display: inline-block;
+}
+
+#header_right_side {
+    float: right;
+    width:15%;
+    height: 100%;
+}
+
+#header_right_side_menu {
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#header_left_side {
+    float: left;
+    width:35%;
+    height: 100%;
+}
+
+#header_center {
+    width:50%;
+    height: 100%;
+    margin:auto;
+}
+#header_portraits {
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.header_portraits_img_wrapper {
+    width: 64px;
+    height: 93px;
+    float: left;
+    margin-right: 40px;
+}
+
+#header_portraits img {
+    
+    display: inline-block;
+    width: 54px;
+    height: 83px;
+}
+
+.grayed_portrait {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ 
+}
+
+#selected_portrait {
+    border: 1px solid #F6FDB9;
+    filter: none;
+    height: 93px !important;
+    width: 64px !important;
+}
+
+#header_portraits img.grayed_portrait:hover {
+    border: 1px solid #F6FDB9;
+    filter: none;
+    height: 93px;
+    width: 64px;
+}
+
+#main {
+    width: 100%;
+    clear: both;
+    margin-top:15px;
+}
+
+#main_left_side {
+    float: left;
+    width: 20%;
+    border: 1px solid black;
+    min-height: 800px;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: white;
+    
+}
+
+#main_left_side label {
+    display:inline-block;
+    width: 120px;
+}
+
+#main_right_side {
+    padding: 10px;
+    float: right;
+    width: 20%;
+    border: 1px solid black;
+    background-color: white;
+    min-height: 800px;
+}
+
+#main_center {
+    margin:auto;
+    width: 50%;
+    float: right;
+}
+
+
+#builder {
+    margin: auto;
+    width: 800px;
+    height: 1000px;
+    /*background-color: rgba(41,50,47,0.8);*/
+    background-color: rgb(41,50,47);
+    opacity:0.8;
+    position:relative;
+    background-image: url('../images/test_fond.png');
+    background-repeat: repeat;
+}
+
+#builder_wrapper {
+    height: 600px;
+    width: 800px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    position:relative;
+}
+
+.skill_box {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    cursor: pointer;
+    /*z-index: 1000;*/
+}
+
+.skill_img {
+    
+}
+
+.grayed {
+    /*filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    /*filter: gray; /* IE6-9 */
+    /*-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ 
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+.description_box {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    /*border: 2px solid orange;
+    border-radius: 7px;*/
+    z-index : 1100 !important;
+    cursor : default !important;
+    width: 320px;
+    font-size: 13px;
+    color: gray;
+}
+
+.description_box_wrapper {
+    padding: 18px;
+    font-size: 12px;
+}
+
+.description_box_skill_title {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-size: 18px !important;
+}
+
+.description_box_icone {
+    margin-bottom: 10px;
+}
+
+.description_box_icone img {
+    padding-right: 10px;
+}
+.description_box_categ_title {
+    color: green;
+    display:block;
+}
+
+.description_box_categ {
+    margin-bottom: 10px;
+}
+
+.description_box_value {
+    color: red;
+}
+
+.floated {
+    float: right;
+}
+
+
+.skill_line {
+    position:absolute;
+    background-color: #9D9883;
+    z-index: -5;
+}
+
+
+
+#newSkill {
+    
+}
+
+
+.dmg_highlight {
+    color: yellow;
+}
+
+
+.delete_icon {
+    position: absolute;
+    margin-left: 22px;
+    background-image: url('../images/delete-icon.png');
+    width: 26px;
+    height: 26px;
+}
